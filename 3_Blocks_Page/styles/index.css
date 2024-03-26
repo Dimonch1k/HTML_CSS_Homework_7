@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+:is(main, .container, .block1, .block2, .block3) {
+  width: 100%;
+}
+
+.container :is(.block1, .block2, .block3) {
+  display: flex;
+  align-items: center;
+
+  :is(span, img) {
+    width: 50%;
+  }
+}
+
+span {
+  text-align: center;
+}
